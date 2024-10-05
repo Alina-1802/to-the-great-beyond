@@ -14,9 +14,13 @@ public class PlanetManager : MonoBehaviour
     public TextMeshProUGUI completedQuests;
     int numberCompletedQuests = 0;
 
+    public int planetNumber = 1;
+
+    private GameManager gameManager;
+
     void Start()
     {
-        
+        gameManager = GameObject.FindObjectOfType<GameManager>();
     }
 
     void Update()
@@ -28,5 +32,27 @@ public class PlanetManager : MonoBehaviour
     {
         numberCompletedQuests++;
         completedQuests.text = "completed quests: " + numberCompletedQuests.ToString() + "/5";
+
+        if(numberCompletedQuests == 5)
+        {
+            switch(planetNumber)
+            {
+                case 1:
+                    {
+                        gameManager.isPlanet1Completed = true;
+                        break;
+                    }
+                case 2:
+                    {
+                        gameManager.isPlanet2Completed = true;
+                        break;
+                    }
+                case 3:
+                    {
+                        gameManager.isPlanet3Completed = true;
+                        break;
+                    }
+            }
+        }
     }
 }

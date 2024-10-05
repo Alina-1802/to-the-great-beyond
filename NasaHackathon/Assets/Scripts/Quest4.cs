@@ -135,7 +135,7 @@ public class Quest4 : MonoBehaviour
             correctText.text = "correct 5/5";
             isQuestCompleted = true;
 
-            planetManager.isQuest1Completed = true;
+            planetManager.isQuest4Completed = true;
             planetManager.UpdateCompletedQuestsText();
         }
         else

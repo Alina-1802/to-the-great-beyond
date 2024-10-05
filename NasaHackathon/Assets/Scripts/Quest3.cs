@@ -83,7 +83,7 @@ public class Quest3 : MonoBehaviour
             correctText.text = "correct 4/4";
             isQuestCompleted = true;
 
-            planetManager.isQuest1Completed = true;
+            planetManager.isQuest3Completed = true;
             planetManager.UpdateCompletedQuestsText();
         }
         else
