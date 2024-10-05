@@ -28,10 +28,14 @@ public class Quest3 : MonoBehaviour
     public Button submitButton;
 
     public GameObject questPanel;
+    public bool isQuestCompleted = false;
+
+    private PlanetManager planetManager;
 
     void Start()
     {
         questPanel.SetActive(false);
+        planetManager = GameObject.FindObjectOfType<PlanetManager>();
     }
 
 
@@ -77,6 +81,10 @@ public class Quest3 : MonoBehaviour
             //correct
             correctText.gameObject.SetActive(true);
             correctText.text = "correct 4/4";
+            isQuestCompleted = true;
+
+            planetManager.isQuest1Completed = true;
+            planetManager.UpdateCompletedQuestsText();
         }
         else
         {

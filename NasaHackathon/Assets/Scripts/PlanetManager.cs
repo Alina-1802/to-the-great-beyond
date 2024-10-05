@@ -1,18 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlanetManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public bool isQuest1Completed = false;
+    public bool isQuest2Completed = false;
+    public bool isQuest3Completed = false;
+    public bool isQuest4Completed = false;
+    public bool isQuest5Completed = false;
+
+    public TextMeshProUGUI completedQuests;
+    int numberCompletedQuests = 0;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void UpdateCompletedQuestsText()
+    {
+        numberCompletedQuests++;
+        completedQuests.text = "completed quests: " + numberCompletedQuests.ToString() + "/5";
     }
 }

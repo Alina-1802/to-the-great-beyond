@@ -24,13 +24,15 @@ public class Quest2 : MonoBehaviour
     public int[] correctAnswers = {1, 3, 2, 1, 2};
 
     public int selectedButton;
-
-
     public int currentQuestion = 1;
+    public bool isQuestCompleted = false;
+
+    private PlanetManager planetManager;
 
     void Start()
     {
         questPanel.SetActive(false);
+        planetManager = GameObject.FindObjectOfType<PlanetManager>();
     }
 
     void Update()
@@ -130,6 +132,10 @@ public class Quest2 : MonoBehaviour
             //correct
             correctText.gameObject.SetActive(true);
             correctText.text = "correct 5/5";
+            isQuestCompleted = true;
+
+            planetManager.isQuest2Completed = true;
+            planetManager.UpdateCompletedQuestsText();
         }
         else
         {

@@ -17,9 +17,12 @@ public class Quest1 : MonoBehaviour
     public TextMeshProUGUI answer;
     public TextMeshProUGUI correctAnswer;
 
+    private PlanetManager planetManager;
+
     void Start()
     {
         questPanel.SetActive(false);
+        planetManager = GameObject.FindObjectOfType<PlanetManager>();
     }
 
 
@@ -67,6 +70,9 @@ public class Quest1 : MonoBehaviour
             sendButton.interactable = false;
             correctText.gameObject.SetActive(true);
             incorrectText.gameObject.SetActive(false);
+
+            planetManager.isQuest1Completed = true;
+            planetManager.UpdateCompletedQuestsText();
         }
         else
         {
