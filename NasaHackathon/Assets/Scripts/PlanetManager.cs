@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlanetManager : MonoBehaviour
 {
@@ -17,15 +18,20 @@ public class PlanetManager : MonoBehaviour
     public int planetNumber = 1;
 
     private GameManager gameManager;
+    public GameObject chatbotUI;
 
     void Start()
     {
         gameManager = GameObject.FindObjectOfType<GameManager>();
+        
     }
 
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.P) && !chatbotUI.activeSelf)
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 
     public void UpdateCompletedQuestsText()

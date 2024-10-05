@@ -14,9 +14,9 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    // Update is called once per frame
     void Update()
     {
+        // load proper scene when planet is interactive
         if(Input.GetKeyDown(KeyCode.G))
         {
             SceneManager.LoadScene(1);
