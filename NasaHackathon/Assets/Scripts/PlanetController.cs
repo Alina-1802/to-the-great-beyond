@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlanetController : MonoBehaviour
 {
     public float angle = 0.001f;
     public TextMeshPro planetName;
+    public GameObject planetDescription;
 
     void Start()
     {
-        
+        planetDescription.SetActive(false);
     }
 
 
@@ -25,7 +27,17 @@ public class PlanetController : MonoBehaviour
     {
         if(other.gameObject.GetComponent<SpaceshipController>() != null)
         {
-            Debug.Log("Kolizja");
+            Debug.Log("Kolizja ze statkiem");
+            planetDescription.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.GetComponent<SpaceshipController>() != null)
+        {
+            Debug.Log("Wyjscie z kolizji ze statkiem");
+            planetDescription.SetActive(false);
         }
     }
 
