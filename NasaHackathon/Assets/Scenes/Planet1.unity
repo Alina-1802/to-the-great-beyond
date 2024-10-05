@@ -4715,9 +4715,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 832731953}
-        m_TargetAssemblyTypeName: Quest1, Assembly-CSharp
-        m_MethodName: OnSendClicked
+      - m_Target: {fileID: 1481888690}
+        m_TargetAssemblyTypeName: Quest3, Assembly-CSharp
+        m_MethodName: OnSubmitButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8763,6 +8763,7 @@ RectTransform:
   - {fileID: 2040930894}
   - {fileID: 1102188853}
   - {fileID: 1204379178}
+  - {fileID: 1840747893}
   m_Father: {fileID: 1512714764}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -8843,12 +8844,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.5482092, y: 1, z: 2.374516}
+  m_Center: {x: 0.014161587, y: 0, z: 0.046052396}
 --- !u!23 &1481888687
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8931,11 +8932,15 @@ MonoBehaviour:
   answer2: {fileID: 2117552021}
   answer3: {fileID: 777734543}
   answer4: {fileID: 1526776357}
+  input1: {fileID: 692192202}
+  input2: {fileID: 1102734213}
+  input3: {fileID: 173301879}
+  input4: {fileID: 1939311624}
   answers: 00000000000000000000000000000000
   correctAnswers: 04000000010000000300000002000000
   correctText: {fileID: 1190056974}
   incorrectText: {fileID: 450803646}
-  replayButton: {fileID: 0}
+  replayButton: {fileID: 1840747894}
   submitButton: {fileID: 873259083}
   questPanel: {fileID: 1461398927}
 --- !u!1 &1485815248
@@ -9104,7 +9109,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1461398928}
-  - {fileID: 1840747893}
   m_Father: {fileID: 1481888689}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -11302,7 +11306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1840747893
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11315,11 +11319,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1512714764}
+  m_Father: {fileID: 1461398928}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 418, y: -303}
+  m_AnchoredPosition: {x: 419, y: -305}
   m_SizeDelta: {x: 62.9744, y: 53.6537}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1840747894
@@ -11365,7 +11369,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1840747895}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1481888690}
+        m_TargetAssemblyTypeName: Quest3, Assembly-CSharp
+        m_MethodName: OnReplayButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1840747895
 MonoBehaviour:
   m_ObjectHideFlags: 0
