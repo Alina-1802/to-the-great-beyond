@@ -6,6 +6,7 @@ public class SpaceshipController : MonoBehaviour
 {
 
     public float force = 30f;
+    public float rotationForce = 30f;
     private Rigidbody rb;
 
     void Start()
@@ -24,7 +25,11 @@ public class SpaceshipController : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
         float horizontalInput = Input.GetAxis("Horizontal");
 
-        Vector3 movement = new Vector3(horizontalInput, 0, verticalInput) * force * Time.deltaTime;
-        rb.AddForce(movement);
+        Vector3 movement = new Vector3(0, 0, verticalInput) * force * Time.deltaTime;
+        rb.AddRelativeForce(movement);
+
+        Vector3 rotation = new Vector3(0, horizontalInput, 0) * rotationForce * Time.deltaTime;
+        transform.Rotate(rotation);
+
     }
 }
