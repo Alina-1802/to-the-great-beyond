@@ -28,7 +28,7 @@ public class PlanetManager : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.P) && !chatbotUI.activeSelf)
+        if(Input.GetKeyDown(KeyCode.F2) && !chatbotUI.activeSelf)
         {
             SceneManager.LoadScene(0);
         }
