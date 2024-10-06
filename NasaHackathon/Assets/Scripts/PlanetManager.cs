@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -20,6 +21,8 @@ public class PlanetManager : MonoBehaviour
     private GameManager gameManager;
     public GameObject chatbotUI;
 
+    public GameObject completedGamePanel;
+
     void Start()
     {
         gameManager = GameObject.FindObjectOfType<GameManager>();
@@ -34,7 +37,7 @@ public class PlanetManager : MonoBehaviour
         }
     }
 
-    public void UpdateCompletedQuestsText()
+    public void UpdateCompletedQuestsText(GameObject panelToInactivate)
     {
         numberCompletedQuests++;
         completedQuests.text = "completed quests: " + numberCompletedQuests.ToString() + "/5";
@@ -45,10 +48,17 @@ public class PlanetManager : MonoBehaviour
             {
                 case 1:
                     {
+                        panelToInactivate.SetActive(false);
+                        completedGamePanel.SetActive(true);
                         gameManager.isPlanet1Completed = true;
                         break;
                     }
             }
         }
+    }
+
+    public void OnEndButtonClicked()
+    {
+        SceneManager.LoadScene("EndScene");
     }
 }

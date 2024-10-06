@@ -84,7 +84,7 @@ public class Quest3 : MonoBehaviour
             isQuestCompleted = true;
 
             planetManager.isQuest3Completed = true;
-            planetManager.UpdateCompletedQuestsText();
+            planetManager.UpdateCompletedQuestsText(questPanel);
         }
         else
         {

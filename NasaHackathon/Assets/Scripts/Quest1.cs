@@ -72,7 +72,7 @@ public class Quest1 : MonoBehaviour
             incorrectText.gameObject.SetActive(false);
 
             planetManager.isQuest1Completed = true;
-            planetManager.UpdateCompletedQuestsText();
+            planetManager.UpdateCompletedQuestsText(questPanel);
         }
         else
         {

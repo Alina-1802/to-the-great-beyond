@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: b0da5732948217c4687e8af7be370591
   - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: 9e1742d7df6219f469d8c9efd1ed0b3b
+  - enabled: 1
     path: Assets/Scenes/SpaceshipScene.unity
     guid: ad0e8139370873f4cb18adffe952e328
   - enabled: 1
     path: Assets/Scenes/Planet1.unity
     guid: 102d57389d1800048b9244d8f8cd9d43
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: aaef4e16a2e05d4418fdee687ca3e1ca
   m_configObjects: {}
