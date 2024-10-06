@@ -6,10 +6,6 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public bool isPlanet1Completed = false;
-    public bool isPlanet2Completed = false;
-    public bool isPlanet3Completed = false;
-
-    public int unlockedPlanets = 1;
 
     void Start()
     {
@@ -18,10 +14,8 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        // load proper scene when planet is interactive
-        if(Input.GetKeyDown(KeyCode.G))
-        {
-            SceneManager.LoadScene(1);
-        }
+
     }
+
+
 }

@@ -30,7 +30,7 @@ public class PlanetManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.F2) && !chatbotUI.activeSelf)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("SpaceshipScene");
         }
     }
 
@@ -46,16 +46,6 @@ public class PlanetManager : MonoBehaviour
                 case 1:
                     {
                         gameManager.isPlanet1Completed = true;
-                        break;
-                    }
-                case 2:
-                    {
-                        gameManager.isPlanet2Completed = true;
-                        break;
-                    }
-                case 3:
-                    {
-                        gameManager.isPlanet3Completed = true;
                         break;
                     }
             }

@@ -53,6 +53,6 @@ public class PlanetController : MonoBehaviour
 
     public void OnLandOnPlanetClicked()
     {
-        SceneManager.LoadScene(planetNumber);
+        SceneManager.LoadScene("Planet1");
     }
 }
