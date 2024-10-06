@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public bool isPlanet2Completed = false;
     public bool isPlanet3Completed = false;
 
+    public int unlockedPlanets = 1;
+
     void Start()
     {
         DontDestroyOnLoad(gameObject);

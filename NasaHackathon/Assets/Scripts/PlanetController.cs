@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class PlanetController : MonoBehaviour
 {
-    public float angle = 0.001f;
+    private float angle = 0.0005f;
     public TextMeshPro planetName;
     public GameObject planetDescription;
+
+    public int planetNumber;
 
     void Start()
     {
@@ -46,5 +49,10 @@ public class PlanetController : MonoBehaviour
         GameObject mainCamera = GameObject.Find("Main Camera");
         planetName.transform.LookAt(mainCamera.transform);
         planetName.transform.Rotate(0, 180, 0);
+    }
+
+    public void OnLandOnPlanetClicked()
+    {
+        SceneManager.LoadScene(planetNumber);
     }
 }

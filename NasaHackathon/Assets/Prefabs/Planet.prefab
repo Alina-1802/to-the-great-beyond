@@ -194,8 +194,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -434,7 +434,7 @@ RectTransform:
   m_GameObject: {fileID: 2318150779049904439}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.092115, y: 2.092115, z: 2.092115}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7347341825884209784}
@@ -446,7 +446,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -9.999878, y: -4.500122}
+  m_AnchoredPosition: {x: -9.999878, y: -4.500183}
   m_SizeDelta: {x: -1416.7598, y: -908.8392}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2184863997733784054
@@ -1220,7 +1220,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cab015fc518e8e46baa89c00a434130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  angle: 0.001
   planetName: {fileID: 6785348782703227476}
   planetDescription: {fileID: 0}
 --- !u!1001 &7591384724568989707
