@@ -5758,6 +5758,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4224935228769838443, guid: 49637a25b3b0bb64590e3a4251821c67, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5088511778654246658, guid: 49637a25b3b0bb64590e3a4251821c67, type: 3}
       propertyPath: m_Name
       value: Chatbot

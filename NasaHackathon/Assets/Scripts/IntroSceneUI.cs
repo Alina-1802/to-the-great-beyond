@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class IntroSceneUI : MonoBehaviour
 {
-    public void OnStartClicked()
+    public void OnButtonPlayClicked()
     {
-        SceneManager.LoadScene("IntroScene");
+        SceneManager.LoadScene("SpaceshipScene");
     }
 }
