@@ -1,6 +1,8 @@
 # To the Great Beyond
 An educational game about exoplanets created in 30 hours as part of the NASA Space Apps Challenge hackathon. The team consisted of two people a programmer (me) and a graphic designer.
 
+![game1](https://github.com/user-attachments/assets/c58b0f0a-84ce-41b0-adfe-574e2f010361)
+
 ## Description
 To the Great Beyond is an educational game designed to inspire curiosity and deepen knowledge about exoplanets. Players embark on a quest to solve various challenges in the form of engaging quizzes, testing their understanding of exoplanets while discovering fascinating new facts.
 
@@ -30,7 +32,7 @@ The game presents scientific concepts in an accessible and fun way, making compl
 - Metahuman Unreal Engine
 - Hugging Face
 
-![game1](https://github.com/user-attachments/assets/c58b0f0a-84ce-41b0-adfe-574e2f010361)
+![game7](https://github.com/user-attachments/assets/f1c0a405-dedf-4d1d-be4c-22b4599da5ad)
 ![game3](https://github.com/user-attachments/assets/0fba26b7-1ea4-43bd-8289-a9814577a966)!
 [game4](https://github.com/user-attachments/assets/72f80e5c-b4d4-4ed2-9ab3-3564ae4c1b11)
 ![game5](https://github.com/user-attachments/assets/7971d3a0-ad59-463f-8962-bc8fe989422e)
